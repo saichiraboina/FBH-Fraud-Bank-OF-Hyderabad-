@@ -1,10 +1,20 @@
+<h1>FBH(FRUD BANK OF HYDERABAD)</h1>
+. A Python and Django Project That is Bank Project
+<h1>Features</h1>
+<h5>1.Create Account </h5>
+<h5>2.Pin Generation</h5>
+<h5>3.Check Balance</h5>
+<h5>4.Money Withdraw</h5>
+<h5>5.Money Deposit</h5>
+<h5>6.Money Transaction</h5>
+
+
 # TECHNOLOGIES USED 📌
 
 ## Front End 📫
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 
 
