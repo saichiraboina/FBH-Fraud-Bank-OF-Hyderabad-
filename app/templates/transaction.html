@@ -1,0 +1,43 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<section class="Trans_sec">
+    <br><br>
+    <div class="wal_msg">
+        <h2>{{msg}}</h2>
+    </div>
+    {% if messages %}
+      {% for message in messages %}
+        <div class="message_transaction">
+          {{message}}
+        </div>
+      {% endfor%}
+    {% endif%}
+    <div class="heading">
+        <h1>TRANSACTION</h1>
+    </div>
+    <form action="" method="POST" class="trans_form">
+        {% csrf_token %}
+        <div class="trans">
+            <label for="">Sender A/C NO:</label>
+            <input type="number" name="s_acc" id="" placeholder="Enter Sender A/C No">
+        </div>
+        <div class="trans">
+            <label for="">Receiver A/C NO:</label>
+            <input type="number" name="r_acc" id="" placeholder="Enter Receiver A/C No..">
+        </div>
+        <div class="trans">
+            <label for="">Amount:</label>
+            <input type="number" name="amount" id="">
+        </div>
+        <div class="trans">
+            <label for="">PIN:</label>
+            <input type="password" name="pin" id="">
+        </div>
+        <div class="trans_btn">
+            <button type="submit">SEND</button>
+        </div>
+    </form>
+    
+</section>
+{% endblock content %}

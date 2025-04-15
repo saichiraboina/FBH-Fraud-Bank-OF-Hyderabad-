@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<section class="deposite_sec">
+    <br><br>
+    {% if messages %}
+      {% for message in messages %}
+        <div class="message">
+          {{message}}
+        </div>
+      {% endfor%}
+    {% endif%}
+    <div class="heading">
+      <h1>---DEPOSIT---</h1>
+    </div>
+    <form action=""  method="POST" class="deposite_form">
+        {% csrf_token %}
+        <div class="dep">
+            <label for="">Account Number:</label>
+            <input type="tel" name="acc" id="" placeholder="Enter the Account number..">
+        </div>
+        <div class="dep">
+            <label for="">Deposite Money:</label>
+            <input type="tel" name="deposite" id="" placeholder="Enter how much you want deposite..">
+        </div>
+        <div class="deposite_btn">
+            <button type="submit">Deposite</button>
+        </div>
+    </form>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+<section class="pin_gen">
+    <div class="heading">
+         <h1>--PIN GENERATION--</h1>
+    </div>
+    <form action="" method="POST" class="form_pin">
+        {% csrf_token %}
+        <div class="account">
+            <label for="">Account Number:</label>
+            <input type="number" name="acc" id="" placeholder="Enter the Account Number...">
+        </div>
+        <div class="Pin_btn">
+        <button type="submit"  name="otp" maxlength="6">Generate OTP</button>
+        </div>
+    </form>
+
+</section>
+
+{% endblock content %}

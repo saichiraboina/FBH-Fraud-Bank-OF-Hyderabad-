@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<section class="Withdraw_sec">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="message">
+          {{message}}
+        </div>
+      {% endfor%}
+    {% endif%}
+    <div class="heading">
+      <h1>WITHDRAWAL FORM</h1>
+    </div>
+    <form action="" class="withdraw_form" method="POST">
+        {% csrf_token %}
+        <div class="with">
+            <label for="">Account Number:</label>
+            <input type="number" name="acc" id="" placeholder="Enter the Account Number..">
+        </div>
+        <div class="with">
+            <label for="">Pin:</label>
+            <input type="password" name="pin" id="" placeholder="Enter the Pin ...">
+        </div>
+        <div class="with">
+            <label for="">Amount:</label>
+            <input type="number" name="amount" id="" placeholder="Enter the amout how much you want..">
+        </div>
+        <div class="withdraw_btn">
+            <button type="submit">Withdraw</button>
+        </div>
+    </form>
+
+</section>
+{% endblock content %}

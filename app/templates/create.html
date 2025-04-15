@@ -1,0 +1,51 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+<section class="create_sec">
+        <br><br>
+        {% if messages %}
+          {% for message in messages %}
+            <div class="message">
+              {{message}}
+            </div>
+          {% endfor%}
+        {% endif%}
+    <div class="heading">
+        <h1>---ACCOUNT CREATION---</h1>
+    </div>
+    <form action="" method="POST" class="form">
+        {% csrf_token %}
+        <div class="fields">
+            <label for="">Name:</label>
+            <input type="text" placeholder="Enter the name...." name="name">
+        </div>
+        <div class="fields">
+            <label for="">Date Of Birth:</label>
+            <input type="date" placeholder="Date of Birth....." name="dob">
+        </div>
+        <div class="fields">
+            <label for="">Aadhar Number:</label>
+            <input type="tel" placeholder="Enter the Aadharnumber...." name="aadhar">
+        </div>
+        <div class="fields">
+            <label for="">Pan:</label>
+            <input type="text" placeholder="Enter the Pancard number..." name="pan">
+        </div>
+        <div class="fields">
+            <label for="">Email:</label>
+            <input type="email" placeholder="Enter the Email Id..." name="email">
+        </div>
+        <div class="fields">
+            <label for="">Mobile Number:</label>
+            <input type="tel" placeholder="Enter Mobile Number..." name="mobile">
+        </div>
+        <div class="fields">
+            <label for="">Address:</label>
+            <textarea name="address" id=""></textarea>
+        </div>
+        <div class="sub"> 
+            <button type="submit">Create</button>
+        </div>
+    </form>
+</section>
+{% endblock content %}

@@ -1,0 +1,546 @@
+.all_logos{
+    /* border: 2px solid red; */
+    height: 400px;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color:antiquewhite; */
+    background-image: url(./images/main_back_bank.jpg);
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+.logos{
+    /* border: 2px solid red; */
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: white;
+}
+.logos:hover{
+    cursor: pointer;
+    height: 130px;
+    width: 130px;
+    box-shadow: 0 0 10px green;
+    border-radius: 50%;
+    
+}
+
+/* create.css starts here */
+.create_sec{
+    /* border: 2px solid ; */
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    border-radius: 1rem;
+}
+.message{
+    height: 60px;
+    width:600px;
+    /* text-align: center; */
+    background-color: bisque;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+  }
+.heading{
+    height: 60px;
+    width: 600px;
+    background-image: linear-gradient(red, yellow, green);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    h1{
+        font-family: fantasy;
+        font-size: 32px;
+        color:blue;
+    }
+}
+.form{
+    /* border: 2px solid; */
+    height: 300px;
+    width: 600px;
+    box-shadow: 0 0 15px gray;
+    background-color:grey;
+    border-radius: 1rem;
+    padding: 10px;
+    background-image: url(./images/back_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+}
+.fields{
+    /* border: 2px solid; */
+    height: 40px;
+    margin-left: 10%;
+    display: flex;
+    gap: 15px;
+    label{
+        font-size: 20px;
+        color: white;
+    }
+    input{
+        width: 70%;
+        height: 30px;
+        border-radius: 1rem;
+        border-color: blue;
+        font-size: 15px;
+    }
+}
+.sub{
+    text-align: center;
+    /* border: 2px solid; */
+    height: 40px;
+    margin-top: 20px;
+    button{
+        height: 40px;
+        width: 100px;
+        border-radius: 1rem;
+        background-color: burlywood;
+        color: white;
+        font-style: italic;
+        font-weight: 600;
+    }
+}
+
+/* Pin Generetion starts here */
+
+.pin_gen{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    border-radius: 1rem;
+}
+.form_pin{
+    height: 300px;
+    width: 600px;
+    box-shadow: 0 0 15px gray;
+    background-color:grey;
+    border-radius: 1rem;
+    padding: 10px;
+    background-image: url(./images/back_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+}
+.account{
+    height: 40px;
+    margin-left: 10%;
+    margin-top:5%;
+    display: flex;
+    gap: 15px;
+    label{
+        font-size: 20px;
+        color: white;
+    }
+    input{
+        width: 50%;
+        height: 30px;
+        border-radius: 1rem;
+        border-color: blue;
+        font-size: 15px;
+    }
+}
+.Pin_btn{
+    text-align: center;
+    margin-top: 15%;
+    button{
+        height: 36px;
+        width: 200px;
+        border-radius: 1rem;
+        background-color: red;
+        color: white;
+        font-size: 16px;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+        border-radius: 2rem;
+    }
+}
+
+/* pin generation ends here */
+/* Pin Validation starts here */
+.valid_otp_sec{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    border-radius: 1rem;
+}
+.form_otp{
+    height: 300px;
+    width: 600px;
+    box-shadow: 0 0 15px gray;
+    background-color:grey;
+    border-radius: 1rem;
+    padding: 10px;
+    background-image: url(./images/back_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+}
+.valid_otp_div{
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: flex;
+    gap: 15px;
+    label{
+        font-size: 20px;
+        color: white;
+        margin-top: 5%;
+    }
+    input{
+        width: 50%;
+        margin-top: 5%;
+        height: 30px;
+        border-radius: 1rem;
+        border-color: blue;
+        font-size: 15px;
+    }
+}
+.valid_btn{
+    margin-top: 10%;
+    text-align: center;
+    button{
+        border-radius: 1rem;
+        height: 32px;
+        width: 100px;
+        background-color: blue;
+        color: white;
+        font-family:serif;
+        font-weight: 600;
+    }
+    button:hover{
+        cursor: pointer;
+        color: blue;
+        background-color:aqua;
+
+    }
+}
+/* pin validation ends here */
+/* wallet starts here */
+
+.wal_sec{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    border-radius: 1rem;
+}
+.Wal_form{
+    height: 300px;
+    width: 600px;
+    box-shadow: 0 0 15px gray;
+    background-color:grey;
+    border-radius: 1rem;
+    padding: 10px;
+    background-image: url(./images/back_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+}
+.wal{
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: flex;
+    gap: 15px;
+    label{
+        font-size: 20px;
+        color: white;
+        margin-top: 5%;
+    }
+    input{
+        width: 50%;
+        margin-top: 5%;
+        height: 30px;
+        border-radius: 1rem;
+        border-color: blue;
+        font-size: 15px;
+    }
+}
+.wal_btn{
+    margin-top: 10%;
+    text-align: center;
+    button{
+        border-radius: 1rem;
+        height: 32px;
+        width: 100px;
+        background-color: blue;
+        color: white;
+        font-family:serif;
+        font-weight: 600;
+    }
+    button:hover{
+        cursor: pointer;
+        color: blue;
+        background-color:aqua;
+
+    }
+}
+.wal_msg{
+    height: 50px;
+    width: 600px;
+    background-color: azure;
+}
+/* Wallet ends here */
+
+/* valid-otp starts here */
+.valid_otp_sec{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    border-radius: 1rem;
+}
+.form_otp{
+    height: 300px;
+    width: 600px;
+    box-shadow: 0 0 15px gray;
+    background-color:grey;
+    border-radius: 1rem;
+    padding: 10px;
+    background-image: url(./images/back_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+}
+.with{
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: flex;
+    gap: 15px;
+    label{
+        font-size: 20px;
+        color: white;
+        margin-top: 5%;
+    }
+    input{
+        width: 50%;
+        margin-top: 5%;
+        height: 30px;
+        border-radius: 1rem;
+        border-color: blue;
+        font-size: 15px;
+    }
+}
+.withdraw_btn{
+    margin-top: 10%;
+    text-align: center;
+    button{
+        border-radius: 1rem;
+        height: 32px;
+        width: 100px;
+        background-color: blue;
+        color: white;
+        font-family:serif;
+        font-weight: 600;
+    }
+    button:hover{
+        cursor: pointer;
+        color: blue;
+        background-color:aqua;
+
+    }
+}
+
+/* Valid_otp end here */
+
+/* deposite Starts here */
+.deposite_sec{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    border-radius: 1rem;
+}
+.deposite_form{
+    height: 300px;
+    width: 600px;
+    box-shadow: 0 0 15px gray;
+    background-color:grey;
+    border-radius: 1rem;
+    padding: 10px;
+    background-image: url(./images/deposite_back1.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: center;
+}
+.dep{
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: flex;
+    gap: 15px;
+    label{
+        font-size: 20px;
+        color: white;
+        margin-top: 5%;
+    }
+    input{
+        width: 50%;
+        margin-top: 5%;
+        height: 30px;
+        border-radius: 1rem;
+        border-color: blue;
+        font-size: 15px;
+    }
+}
+.deposite_btn{
+    margin-top: 10%;
+    text-align: center;
+    button{
+        border-radius: 1rem;
+        height: 36px;
+        width: 250px;
+        background-color: blue;
+        color: white;
+        font-family:serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    button:hover{
+        cursor: pointer;
+        color: blue;
+        background-color:aqua;
+
+    }
+}
+
+/* deposite ends here */
+
+/* withdraw starts here */
+
+.Withdraw_sec{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    border-radius: 1rem;
+}
+.withdraw_form{
+    height: 300px;
+    width: 600px;
+    box-shadow: 0 0 15px gray;
+    background-color:grey;
+    border-radius: 1rem;
+    padding: 10px;
+    background-image: url(./images/withdraw_back.png);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: center;
+}
+/* withdraw ends here */
+/* Transaction starts here */
+.Trans_sec{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    border-radius: 1rem;
+}
+.message_transaction{
+    height: 60px;
+    width:80%;
+    /* text-align: center; */
+    background-color:aqua;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+}
+.trans_form{
+    height: 300px;
+    width: 600px;
+    box-shadow: 0 0 15px gray;
+    background-color:grey;
+    border-radius: 1rem;
+    padding: 10px;
+    background-image: url(./images/withdraw_back.png);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: center;
+}
+.trans{
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 2%;
+    display: flex;
+    gap: 15px;
+    label{
+        font-size: 20px;
+        color: white;
+        margin-top: 5%;
+    }
+    input{
+        width: 50%;
+        margin-top: 5%;
+        height: 30px;
+        border-radius: 1rem;
+        border-color: blue;
+        font-size: 15px;
+    }
+}
+.trans_btn{
+    margin-top: 10%;
+    text-align: center;
+    button{
+        border-radius: 1rem;
+        height: 36px;
+        width: 250px;
+        background-color: blue;
+        color: white;
+        font-family:serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    button:hover{
+        cursor: pointer;
+        color: blue;
+        background-color:aqua;
+
+    }
+}
+/* Transaction ends here */
+.wal_msg{
+    height: 40px;
+    width: 70%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}

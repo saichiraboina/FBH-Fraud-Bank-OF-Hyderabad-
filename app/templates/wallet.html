@@ -1,0 +1,34 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<section class="wal_sec">
+    <div class="heading">
+        <h1>Check Balance</h1>
+    </div>
+    {% if var %}
+        <div style="height: 50px; width: 400px; border-radius: 0.5rem; display: flex; justify-content: center; align-items: center; background-color:aquamarine; color: blue;">
+            <span style="font-size: 25px;">Your Balance is: {{bal}}</span>
+        </div>
+    {% else %}
+    <form action="" method="POST" class="Wal_form">
+        {% csrf_token %}
+        <div class="wal">
+            <label for="">Account Number:</label>
+            <input type="number" name="acc" id="">
+        </div>
+        <div class="wal">
+            <label for="">PIN:</label>
+            <input type="password" name="pin" id="" maxlength="4">
+        </div>
+        
+        <div class="wal_btn">
+            <button type="submit">Check</button>
+        </div>
+        
+    </form>
+    {% endif  %}
+    <div class="wal_msg">
+        <h2>{{msg}}</h2>
+    </div>
+</section>
+{% endblock content %}
